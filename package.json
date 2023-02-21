@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node dist/server.js",
     "postinstall": "tsc && copyfiles -u 1 src/**/*.ejs dist/",
-    "start-dev": "nodemon -e ts,json,ejs src/server.ts",
+    "start-dev": "nodemon -e ejs,json,ts src/server.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -25,7 +25,8 @@
     "ejs": "^3.1.8",
     "express": "^4.18.2",
     "nodemailer": "^6.9.1",
-    "ts-node": "^10.9.1"
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.5"
   },
   "devDependencies": {
     "@types/copyfiles": "^2.4.1",
