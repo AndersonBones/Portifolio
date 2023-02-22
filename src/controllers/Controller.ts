@@ -8,9 +8,9 @@ class GetControllers{
     home(req:Request, res:Response){
         const PersonalData = getData();
         const EmploymentData = getEmployment();
-        const ProjectsData = getProjects();
+        const Projects = getProjects();
 
-        res.render('main', {PersonalData, EmploymentData, ProjectsData})
+        res.render('main', {PersonalData, EmploymentData, Projects})
     }
 
     getCV(req: Request, res: Response){
