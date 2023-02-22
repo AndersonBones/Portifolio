@@ -9,12 +9,12 @@ interface IProject {
 }
 
 const projectSchema = new Schema<IProject>({
-    name:{type:String, required:true},
-    screen:{type:String, require:true},
-    description:{type:String, required:true},
-    stack:{type:[String], required:true},
-    link:{type:String, required:true}
+    name:{type:String},
+    screen:{type:String},
+    description:{type:String},
+    stack:{type:[String]},
+    link:{type:String}
 })
 
-export default model<IProject>('Project', projectSchema);
+export default model<IProject>('projects', projectSchema);
 
