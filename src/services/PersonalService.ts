@@ -1,6 +1,12 @@
-import { data } from "../model/PersonalModel";
+import PersonalModel from "../model/PersonalModel";
 
-export const getData = ()=>{
-    return data;
+export const getPersonalData = async ()=>{
+    const data = await PersonalModel.find({});
+
+    if(data instanceof Error){
+        return new Error('Dados não encontrados!')
+    }else{
+        return data;
+    }
 }
 

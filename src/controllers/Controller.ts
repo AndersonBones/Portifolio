@@ -1,21 +1,17 @@
 import {Request, Response} from 'express'
 import { getEmployment } from '../services/Employment';
-import { getData } from '../services/PersonalService'
+import { getPersonalData } from '../services/PersonalService'
 import { getProjects } from '../services/ProjectsService';
-import MailService from '../services/MailService'
-import ProjectsModel from '../model/ProjectsModel';
+
 
 class GetControllers{
     async home(req:Request, res:Response){
 
-        const PersonalData = getData();
-        const EmploymentData = getEmployment();
-
-        
+        const PersonalData = await getPersonalData();
+        // const EmploymentData = getEmployment();
         const Projects = await getProjects();
-        console.log(Projects);
 
-        res.render('main', {PersonalData, EmploymentData, Projects})
+        res.render('main', {PersonalData,  Projects})
     }
 
     getCV(req: Request, res: Response){

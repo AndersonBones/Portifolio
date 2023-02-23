@@ -1,19 +1,16 @@
-type employment = {
+import { Schema, model} from "mongoose";
+
+interface IEmployment {
     company:string
     emp:string,
     period:string,
 }
 
 
+const employmentSchema = new Schema<IEmployment>({
+    company:{type:String, required:true},
+    emp:{type:String, required:true},
+    period:{type:String, required:true}
+})
 
-export const Employments:employment[] = [{
-        company:'BRF S.A',
-        emp:'Operador || ',
-        period:'2021 - 2023'
-    }, 
-    {
-        company:'Delmoro Supermercados',
-        emp:'Repositor',
-        period:'2023 - Atualmente'
-    },
-] 
+export default model<IEmployment>('employments',employmentSchema);

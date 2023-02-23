@@ -1,6 +1,7 @@
+import { Schema, model } from "mongoose"
 
 
-type Data = {
+interface IPersonal {
     age:number,
     phone:string,
     email:string,
@@ -9,13 +10,14 @@ type Data = {
     university:string
 }
 
+const personalSchema = new Schema<IPersonal>({
+    age:{type:Number, required:true},
+    phone:{type:String, required:true},
+    email:{type:String, required:true},
+    location:{type:String, required:true},
+    education:{type:String, required:true},
+    university:{type:String, required:true}
+})
 
-
-export const data:Data = {
-    age:21,
-    phone:"(65) 99623-7611",
-    email:'abones19@hotmail.com',
-    location:'Lucas do rio Verde, Mato Grosso - Brasil',
-    education:'Analise e Desenvolvimento de Sistemas',
-    university:'Uninter'
-}
+// criação do model // type     //collection //schema             
+export default model<IPersonal>('personal', personalSchema);
