@@ -1,5 +1,5 @@
 # Portifolio
 Tudo sobre minhas qualificações profissionais 
 
-#Preview
+# Preview
 <img src="/public/images/preview.gif">
