@@ -99,13 +99,9 @@
 
         
         <section class="hi mb-5 container m-auto text-Primary">
-            <h1 >Olá</h1>
+            <h1>Olá</h1>
 
-            <p>
-                Sou Desenvolvedor Web, com foco nas tecnologias Nodejs, Typescript, Reactjs e MongoBD. 
-                Sou bastante disciplinado, proativo e lógico. Gosto e prefiro trabalhar em equipe, e também amo aprender coisas novas, e de ensinar o que eu sei. 
-                Meu maior objetivo profissional é ter novas experiências para evoluir profissionalmente e consequentemente ajudar as pessoas compartilhando os conhecimentos aprendidos nesse processo.
-            </p>
+            <p><%=PersonalData[0].hi%></p>
 
             <a class="d-inline-flex justify-content-center align-items-center btn btn-warning text-white  pt-2 pb-1" href="/download-cv"><i class="bi bi-download "></i> <span>DOWNLOAD CV</span></a>
         </section>
@@ -115,11 +111,7 @@
         <section class="resume container text-Primary">
             
             <h1 class="pt-4 ">Resumo</h1>
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                </p>
+                <p><%= PersonalData[0].resume %></p>
 
                 <div class="education">
                     <h5>Formação Acadêmica</h5>
@@ -324,8 +316,9 @@
             
         </footer>
 
-        <div id="preloader" class=" position-fixed d-flex align-items-center justify-content-center" >
-            <div class="lds-dual-ring"></div>
+        <div id="preloader" class=" position-fixed ">
+            <div class="loading-header"></div>
+            <div id="icon-loader" class="lds-dual-ring position-absolute"></div>
         </div>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>

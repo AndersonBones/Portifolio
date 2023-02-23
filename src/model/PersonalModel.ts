@@ -7,7 +7,9 @@ interface IPersonal {
     email:string,
     location:string,
     education:string,
-    university:string
+    university:string,
+    resume:string,
+    hi:string
 }
 
 const personalSchema = new Schema<IPersonal>({
@@ -16,7 +18,9 @@ const personalSchema = new Schema<IPersonal>({
     email:{type:String, required:true},
     location:{type:String, required:true},
     education:{type:String, required:true},
-    university:{type:String, required:true}
+    university:{type:String, required:true},
+    resume:{type:String, required:true},
+    hi:{type:String, required:true}
 })
 
 // criação do model // type     //collection //schema             

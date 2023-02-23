@@ -25,13 +25,10 @@ window.addEventListener('scroll',()=>{
 
 
 document.addEventListener('DOMContentLoaded',()=>{
-    let preloader = document.querySelector("#preloader");
 
-
-    setTimeout(()=>{
-        preloader.classList.remove('d-flex');
-       
-        preloader.classList.add('d-none');
-
-    }, 1000)
+    $("#icon-loader").delay(200).fadeOut('slow',()=>{
+        $("#preloader").fadeOut("slow");
+    
+    })
 })
+
