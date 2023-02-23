@@ -63,6 +63,7 @@ li > a:active{
 
 /* MAIN */
 .person-photo{
+    overflow: hidden;
     max-width: 30%;
     
     background-color: var(--textSecondary);
@@ -72,9 +73,12 @@ li > a:active{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 30px;
 }
 
+.person-photo:hover img{
+    transform: scale(1.1);
+}
 .person-photo img{
+    transition: all .3s ease-in-out;
     width: 100%;
-    
 }
 
 
@@ -242,6 +246,10 @@ li > a:active{
 }
 .project-card:hover{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 30px;
+}
+
+.livePreview > a:hover{
+    text-decoration: underline !important;
 }
 
 .description-project h2{
