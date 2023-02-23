@@ -237,7 +237,7 @@ li > a:active{
     gap: 2rem;
 }
 .project-card{
-    cursor: pointer;
+ 
     transition: .2s ease-in;
 }
 .project-card:hover{
