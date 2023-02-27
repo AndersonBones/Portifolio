@@ -57,7 +57,7 @@
                     <div class=" collapse navbar-collapse " id="navbarNavDropdown">
                         <ul class="navbar-nav d-flex">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Olá</a>
+                                <a class="nav-link active" aria-current="page" href="#resume">Olá</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#portfolio">Portifólio</a>
@@ -100,10 +100,10 @@
          
 
 
-        <section class="resume container text-Primary">
+        <section id="resume" class="resume container text-Primary">
 
             
-            <h1 class="pt-4">Olá</h1>
+            <h1 class="pt-4">OLÁ</h1>
             
             
             <p><%= PersonalData[0].resume %></p>
@@ -111,7 +111,7 @@
             <a class="d-inline-flex justify-content-center align-items-center btn btn-warning text-white" href="/download-cv"><i class="bi bi-download "></i> <span>DOWNLOAD CV</span></a>
 
             <div class="education">
-                <h5>Formação Acadêmica</h5>
+                <h5>FORMAÇÃO ACADÊMICA</h5>
                 <br>
 
                 <div class="education-list">
@@ -142,7 +142,7 @@
                 </div> -->
 
                 <div id="stack" class="stack  text-Primary ">
-                    <h5>Stack</h5>
+                    <h5>STACK</h5>
 
                     <div class="stacks-list d-flex  flex-wrap ">
                         
@@ -211,7 +211,7 @@
         <div class="line "></div>
 
         <section id="portfolio" class="projects w-100 container text-Primary m-auto ">
-            <h1 class="mb-3">Projetos</h1>
+            <h1 class="mb-3">PROJETOS</h1>
 
             <div class="projects-cards m-auto d-flex flex-column" >
         
@@ -227,7 +227,7 @@
                             <p style="word-break: normal;"><%= item.description %></p>
         
                             <div class="used-stack ">
-                                <p>Stack:</p>
+                                <p>STACK:</p>
                                 
                                 <% item.stack.map(stackItem=>{%>
                                     <img src="<%= stackItem %>" alt="">
@@ -249,7 +249,7 @@
         <footer id="contato" class="w-100">
             <div class="footer-container container pt-5 pb-5 col-12 ">
                 <div class="contact-intro text-white text-center">
-                    <h1 class="text-warning">Contato</h1>
+                    <h1 class="text-warning">CONTATO</h1>
                     <p>Preencha o formulário abaixo para esclarermos suas dúvidas e dar início ao seu projeto!</p>
                 </div>
               
@@ -267,7 +267,7 @@
                   <div class="contact-info  m-auto  text-white mt-5 d-flex gap-5 gap-lg-2 flex-column flex-lg-row justify-content-around text-center">
                         <div class="contact-info--location  d-flex flex-column    rounded p-3">
                             <a href="https://www.google.com/maps/d/u/0/embed?mid=17LfyGvP7eBn-y5c_x64P5DC-jRA&hl=en_US&ehbc=2E312F&ll=-12.81544199209076%2C-55.8264365&z=11" target="_blank" class="active-hover text-decoration-none">
-                                <i class="bi bi-geo-alt active-hover"></i>
+                                <i class="bi bi-geo-alt "></i>
                                 <h5 >Localização</h5>
                             </a>
                            
@@ -296,7 +296,7 @@
                  
                   <div class="copyright text-center text-md-start  d-flex flex-column-reverse flex-md-row align-items-center gap-3  justify-content-around ">
                     <span >© Todos os Diretos Reservados - Anderson Bones | <br>
-                         Design by <a href="mailto:abones19@hotmail.com" class=" text-decoration-none">abones19@hotmail.com</a>
+                         Design by <a href="mailto:abones19@hotmail.com" class="text-warning text-decoration-none">abones19@hotmail.com</a>
                         </span>
 
                     <div class="copyright-social  d-flex gap-3 ">

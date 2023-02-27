@@ -1,8 +1,12 @@
+
+
+
+
 window.addEventListener('scroll',()=>{
     
 
 
-    if(window.scrollY > 1000) {
+    if(window.scrollY >= 1000) {
         document.querySelector('nav').classList.add('fixed-top');
         document.querySelector('nav').classList.add('animate__slideInDown');
         document.querySelector('nav').classList.add('navbar-shadow');
@@ -13,17 +17,19 @@ window.addEventListener('scroll',()=>{
 
 
         $("#go-top").fadeIn('fast')
+
     } 
 
     else{
-        $("#go-top").fadeOut('fast')
+        // $("#go-top").fadeOut('fast')
         document.querySelector("nav").style.backgroundColor = 'transparent'
 
+        document.querySelector('nav').classList.remove('navbar-border');
         document.querySelector('nav').classList.remove('animate__slideInDown');
         document.querySelector('nav').classList.remove('fixed-top');
          // remove padding top from body
         document.body.style.paddingTop = '0';
-        document.querySelector('nav').classList.remove('navbar-border');
+       
     } 
     
 })

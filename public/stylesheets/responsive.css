@@ -51,6 +51,8 @@
 }
 
 @media only screen and (min-width: 768px){
+
+
     .main-header::before{
    
         content: '';
@@ -96,7 +98,7 @@
 
     .main-header{
         position: relative;
-        background-image: url('/images/personal-photo.png');
+        background-image: url('/images/personal-photo1.png');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
