@@ -25,32 +25,36 @@
         <link rel="icon" type="image/x-icon" href="/images/favicon.png">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         
+        
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
         <link rel="preconnect" href="https://fonts.googleapis.com">
+
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Epilogue&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet">
        
         <link rel="stylesheet" href="/stylesheets/responsive.css">
         <link rel="stylesheet" href="/stylesheets/style.css">
         <link rel="stylesheet" href="/stylesheets/loader.css">
-        
+
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-       
+        
+
 
         <script src="/scripts/scripts.js" defer></script>
     </head>
     <body class="position-relative">
         
-        <header class="text-light main-header ">
-            <div class="header-background"></div>
-            <nav class="animate__animated animate__faster animate__slideInDown navbar navbar-expand-lg bg-body-tertiary">
+        <header class="text-light main-header position-relative">
+            <div class="header-bg1"></div>
+
+            <nav class="borber border-white  pt-3 ps-5 pe-5 pb-3 animate__animated animate__faster animate__slideInDown navbar navbar-expand-md bg-body-tertiary">
                 <div class="container-fluid">
                    
                     <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <i class="bi bi-list"></i>
                     </button>
-                    <div class="mt-3 collapse navbar-collapse" id="navbarNavDropdown">
+                    <div class=" collapse navbar-collapse " id="navbarNavDropdown">
                         <ul class="navbar-nav d-flex">
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="#">Olá</a>
@@ -59,72 +63,65 @@
                                 <a class="nav-link" href="#portfolio">Portifólio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#contato">Contato</a>
+                                <a class="nav-link" href="#stack">Stack</a>
                             </li>
                         
                         </ul>
                     </div>
                 </div>
+
+                <a class="contact-btn d-none d-md-block btn btn-warning me-2 text-white" style="letter-spacing: 2px;" href="#contato"><b>CONTATO</b></a>
+                
             </nav>
 
+            <div class="position-absolute hero w-100 align-items-center justify-content-center gap-5 d-flex">
+                <div class="person-info d-flex flex-column gap-2 animate__animated animate__fadeInUp animate__delay-1s">
+                    <div class="d-flex flex-column person-description">
+    
+                        <h1>Olá, me chamo <br><h1 style="border-bottom: 1px solid var(--textSecondary);">Anderson Bones</h1><br></h1>
+                        <p>Sou Desenvolvedor Full-stack <br> com experiencia em desenvolvimentos <br> de websites institucionais e pessoais.</p>
+                    </div>
 
-            <div id="top" class="person d-flex ">
-                <div class="person-photo rounded  border-start border-top border-5 border-warning">
-                    <img src="/images/personal-photo1.png"  class="rounded-start" alt=""  >
+                 
+        
+                    <div class="contact-btn ">
+                        <a class="btn btn-warning text-white"  href="#contato"><span>FALE COMIGO</span></a>
+                    </div>
+
                 </div>
 
-                <div class="person-info ">
-                    <div class="person-description">
-                        <h1>Anderson Bones</h1>
-                        <p>Frontend Developer</p>
-                    </div>
+                <figure class="person-photo animate__animated animate__fadeInUp animate__delay-1s border-start border-top border-5 border-warning">
+                    <img class="" src="/images/personal-photo1.png"  alt=""  >
+                </figure>
 
-                    <div class="person-personalData d-flex flex-column">
-                        <p><span>IDADE:</span> <%=PersonalData[0].age%></p>
-                        <p><span>CELULAR:</span> <%=PersonalData[0].phone%></p>
-                        <p><span>EMAIL:</span> <%=PersonalData[0].email%></p>
-                        <p><span>LOCALIZAÇÃO:</span> <%=PersonalData[0].location%></p>
-                    </div>
-                    <div class="person-links d-flex">
-                        <a href="https://www.linkedin.com/in/anderson-bones/" target="_blank"><i class="bi bi-linkedin"></i></a>
-                        <a href="https://github.com/AndersonBones" target="_blank"><i class="bi bi-github"></i></a>
-                        <a href="https://www.instagram.com/bonesdev/" target="_blank"><i class="bi bi-instagram"></i></a>
-                    </div>
-                    
-                </div>
             </div>
+           
         </header>
          
-            
 
-        
-        <section class="hi mb-5 container m-auto text-Primary">
-            <h1>Olá</h1>
-
-            <p><%=PersonalData[0].hi%></p>
-
-            <a class="d-inline-flex justify-content-center align-items-center btn btn-warning text-white  pt-2 pb-1" href="/download-cv"><i class="bi bi-download "></i> <span>DOWNLOAD CV</span></a>
-        </section>
-
-        <div class="line"></div>
 
         <section class="resume container text-Primary">
+
             
-            <h1 class="pt-4 ">Resumo</h1>
-                <p><%= PersonalData[0].resume %></p>
+            <h1 class="pt-4">Olá</h1>
+            
+            
+            <p><%= PersonalData[0].resume %></p>
 
-                <div class="education">
-                    <h5>Formação Acadêmica</h5>
-                    <br>
+            <a class="d-inline-flex justify-content-center align-items-center btn btn-warning text-white" href="/download-cv"><i class="bi bi-download "></i> <span>DOWNLOAD CV</span></a>
 
-                    <div class="education-list">
-                        <div class="item">
-                            <p class="mb-2"><%=PersonalData[0].university%></p>
-                            <span >2022 - 2024</span>
-                            <p class="mt-2"><%= PersonalData[0].education%></p>
-                        </div>
+            <div class="education">
+                <h5>Formação Acadêmica</h5>
+                <br>
+
+                <div class="education-list">
+                    <div class="item">
+                        <p class="mb-2"><%=PersonalData[0].university%></p>
+                        <span >2022 - 2024</span>
+                        <p class="mt-2"><%= PersonalData[0].education%></p>
                     </div>
                 </div>
+            </div>
 
                 <!-- <div class="employment">
                     <h5>Experiências Profissionais</h5>
@@ -144,7 +141,7 @@
                     </div>
                 </div> -->
 
-                <div class="stack  text-Primary ">
+                <div id="stack" class="stack  text-Primary ">
                     <h5>Stack</h5>
 
                     <div class="stacks-list d-flex  flex-wrap ">
@@ -288,7 +285,7 @@
                         </div>
 
                         <div class="contact-info--whatsapp   rounded p-3 d-flex flex-column ">
-                            <a href="tel:+5565996237611" class="active-hover text-decoration-none">
+                            <a href="https://wa.me/5565996237611" class="active-hover text-decoration-none">
                                 <i class="bi bi-whatsapp"></i>
                                 <h5 >Whatsapp</h5>
                             </a>
@@ -310,7 +307,7 @@
                   </div>
             </div>
 
-            <a id="go-top" class="btn btn-warning position-fixed rounded-start text-white bi bi-arrow-up" title="Voltar ao início p-3" href="#top"></a>
+            <a id="go-top" class=" btn btn-warning position-fixed  text-white bi bi-arrow-up" title="Voltar ao início p-3" href="#top"></a>
                 
             
             
@@ -320,9 +317,9 @@
             <div class="loading-header"></div>
             <div id="icon-loader" class="loader position-absolute"></div>
         </div>
+     
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     </body>
 </html>

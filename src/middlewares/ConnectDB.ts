@@ -17,7 +17,7 @@ class ConnectDB{
             console.log('Connection has been established successfully.');
             next();
         } catch (error) {
-            res.status(400).render('404')
+            res.status(400).render('error')
             console.log('Unable to connect to the database:', error)
         }
     }

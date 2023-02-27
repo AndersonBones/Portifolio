@@ -1,4 +1,4 @@
-import express from 'express'
+import express,{Request, Response} from 'express'
 import path from 'path'
 import routes from './routes/index';
 
@@ -14,6 +14,10 @@ class App {
         this.app.set('view engine', 'ejs');
         this.app.set('views', path.join(__dirname, 'views'));
         this.app.use(routes);
+
+        this.app.use((req:Request, res:Response)=>{
+            res.status(400).render('error')
+        })
     }
     
 }
