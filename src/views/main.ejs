@@ -78,7 +78,7 @@
                 <div class="person-info d-flex flex-column gap-2 animate__animated animate__fadeInUp animate__delay-1s">
                     <div class="d-flex flex-column person-description">
     
-                        <h1>Olá, me chamo <br><h1 style="border-bottom: 1px solid var(--textSecondary);">Anderson Bones</h1><br></h1>
+                        <h1> <span class="text-warning">Olá</span>, me chamo <br><h1 style="border-bottom: 1px solid var(--textSecondary);">Anderson Bones</h1><br></h1>
                         <p>Sou Desenvolvedor Full-stack <br> com experiencia em desenvolvimentos <br> de websites institucionais e pessoais.</p>
                     </div>
 
@@ -100,21 +100,21 @@
          
 
 
-        <section id="resume" class="resume container text-Primary">
+        <section id="resume" class="resume container text-Primary d-flex flex-column gap-5">
 
-            
-            <h1 class="pt-4">OLÁ</h1>
-            
-            
-            <p><%= PersonalData[0].resume %></p>
+            <div class="hi">
+                <h1 class="pt-4">OLÁ</h1>
+                <p><%= PersonalData[0].resume %></p>
+    
+            </div>
+          
+            <a class="d-inline-flex download-dv justify-content-center align-items-center btn btn-warning text-white" href="/download-cv"><i class="bi bi-download "></i> <span>DOWNLOAD CV</span></a>
 
-            <a class="d-inline-flex justify-content-center align-items-center btn btn-warning text-white" href="/download-cv"><i class="bi bi-download "></i> <span>DOWNLOAD CV</span></a>
+            <div class="education ">
+                <h5 class="formatElement d-inline-block">FORMAÇÃO ACADÊMICA</h5>
+                
 
-            <div class="education">
-                <h5>FORMAÇÃO ACADÊMICA</h5>
-                <br>
-
-                <div class="education-list">
+                <div class="education-list mt-3">
                     <div class="item">
                         <p class="mb-2"><%=PersonalData[0].university%></p>
                         <span >2022 - 2024</span>
@@ -141,8 +141,12 @@
                     </div>
                 </div> -->
 
+                <div class="qualifications">
+                    <h5 class="formatElement">QUALIFICAÇÕES</h5>
+                </div>
+
                 <div id="stack" class="stack  text-Primary ">
-                    <h5>STACK</h5>
+                    <h5 class="formatElement">STACK</h5>
 
                     <div class="stacks-list d-flex  flex-wrap ">
                         

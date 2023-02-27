@@ -13,6 +13,7 @@
 
 
 
+
 /* HEADER */
 .header-bg1{
 
@@ -84,7 +85,7 @@ li > a:hover::after{
 }
 
 
-li > a:focus::after{
+li > a:focus-visible::after{
     width: 100%;
 }
 
@@ -95,6 +96,7 @@ li > a:focus::after{
 }
 
 .person-photo{
+    z-index: 2;
     overflow: hidden;
     max-width: 25%;
    
@@ -165,7 +167,7 @@ li > a:focus::after{
 }
 
 /* HI */
- .hi, .projects{
+.projects{
     margin-top: 6rem !important;
 
 }
@@ -195,6 +197,10 @@ li > a:focus::after{
     margin-top: 4rem;
 }
 
+.download-dv{
+    width: 13rem;
+}
+
 
 
 .line{
@@ -204,12 +210,11 @@ li > a:focus::after{
 
 /* EDUCATION */
 .education, .employment, .stack{
-    margin-top: 4rem;
+   
     color: var(--textPrimary);
 }
 
-.education h5, .employment h5, .stack h5{
-    margin-bottom: 2rem;
+.formatElement{
     display: inline-block;
     border-bottom: 2px solid var(--textSecondary) !important;
 }
