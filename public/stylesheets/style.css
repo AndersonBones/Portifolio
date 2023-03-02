@@ -274,17 +274,13 @@ li > a:focus-visible::after{
     margin: 0;
 }
 .stacks-list{
+    align-items: center;
     display: flex;
     gap: 1.2rem;
 }
 
 
-.jquery{
-    justify-content: space-between;
-}
-.jquery > img{
-    width: 70px !important; 
-}
+
 .stack-item > img{
     width: 80px ;
 }
