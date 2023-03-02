@@ -45,68 +45,16 @@
     </head>
     <body class="position-relative">
         
-        <header class="text-light main-header position-relative">
-            <div class="header-bg1"></div>
-
-            <nav class="borber border-white  pt-3 ps-5 pe-5 pb-3 animate__animated animate__faster animate__slideInDown navbar navbar-expand-md bg-body-tertiary">
-                <div class="container-fluid">
-                   
-                    <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="bi bi-list"></i>
-                    </button>
-                    <div class=" collapse navbar-collapse " id="navbarNavDropdown">
-                        <ul class="navbar-nav d-flex">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#resume">Olá</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#portfolio">Portifólio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#stack">Stack</a>
-                            </li>
-                        
-                        </ul>
-                    </div>
-                </div>
-
-                <a class="contact-btn d-none d-md-block btn btn-warning me-2 text-white" style="letter-spacing: 2px;" href="#contato"><b>CONTATO</b></a>
-                
-            </nav>
-
-            <div class="position-absolute hero w-100 align-items-center justify-content-center gap-5 d-flex">
-                <div class="person-info d-flex flex-column gap-2 animate__animated animate__fadeInUp animate__delay-1s">
-                    <div class="d-flex flex-column person-description">
-    
-                        <h1> <span class="text-warning">Olá</span>, me chamo <br><h1 style="border-bottom: 1px solid var(--textSecondary);">Anderson Bones</h1><br></h1>
-                        <p>Sou Desenvolvedor Full-stack <br> com experiencia em desenvolvimentos <br> de websites institucionais e pessoais.</p>
-                    </div>
-
-                 
-        
-                    <div class="contact-btn ">
-                        <a class="btn btn-warning text-white"  href="#contato"><span>FALE COMIGO</span></a>
-                    </div>
-
-                </div>
-
-                <figure class="person-photo animate__animated animate__fadeInUp animate__delay-1s border-start border-top border-5 border-warning">
-                    <img class="" src="/images/personal-photo1.png"  alt=""  >
-                </figure>
-
-            </div>
-           
-        </header>
+        <%- include("./partials/header.ejs") %> <!-- Header -->
          
-
 
         <section id="resume" class="pb-5 resume container text-Primary d-flex flex-column gap-5">
 
-            <div class="hi">
+            <article class="hi">
                 <h1 class="pt-4">Olá</h1>
                 <p><%= PersonalData[0].resume %></p>
                 <a class="d-flex download-dv justify-content-center align-items-center btn btn-warning text-white" target="_blank" href="<%=PersonalData[0].cvUrl%>"><i class="bi bi-download "></i> <span>DOWNLOAD CV</span></a>
-            </div>
+            </article>
           
             
 
@@ -266,7 +214,10 @@
         </section> 
         
         <footer id="contato" class="w-100">
-            <div class="footer-container container pt-5 pb-5 col-12 ">
+            <div class="footer-background">
+                
+            </div>
+            <div class="footer-container position-relative container pt-5 pb-5 col-12 ">
                 <div class="contact-intro text-white text-center">
                     <h1 class="text-warning">CONTATO</h1>
                     <p>Preencha o formulário abaixo para esclarermos suas dúvidas e dar início ao seu projeto!</p>

@@ -16,7 +16,7 @@ class App {
         this.app.use(routes);
 
         this.app.use((req:Request, res:Response)=>{
-            res.status(400).render('error')
+            res.status(404).redirect('/')
         })
     }
     
