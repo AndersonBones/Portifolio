@@ -219,27 +219,31 @@ li > a:focus-visible::after{
     border-bottom: 2px solid var(--textSecondary) !important;
 }
 
-.education-list > .item > p:first-child, .employment-list > .item >p:first-child{
-    
-    
+
+.item > p:first-child {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    transform: translateY(-50%);
     margin-bottom: .5rem;
-    position: relative;
+
     
     font-size: 1.2rem;
-    color: var(--textSecondary);
+    color: var(--PrimaryColor);
 }
 
-.education-list > .item > p:last-child, .employment-list > .item > p:last-child{
+.item > p:last-child{
     margin: 0 !important;
+    padding: 0;
 }
 
-.education-list > .item, .employment-list > .item{
-    padding: .5rem 0;
+.item{
+    padding: 1.2rem .5rem !important;
     position: relative;
-    padding-left: .7rem;
-    border-left: 2px solid var(--textSecondary);
+
+    border-left: 2px solid var(--PrimaryColor);
 }
-.education-list > .item::before, .employment-list > .item:before{
+.start-circle::before{
     content: '';
     transform: translateX(-50%);
     left:-1px;
@@ -250,10 +254,10 @@ li > a:focus-visible::after{
     height: 10px !important;
     border-radius: 50%;
     padding: .3rem;
-    border: 2px solid var(--textSecondary);
+    border: 2px solid var(--PrimaryColor);
 }
 
-.education-list > .item::after, .employment-list > .item:last-child::after{
+.end-circle::after{
     content: '';
     transform: translateX(-50%);
     left:-1px;
@@ -264,12 +268,17 @@ li > a:focus-visible::after{
     height: 10px !important;
     border-radius: 50%;
     padding: .3rem;
-    border: 2px solid var(--textSecondary);
+    border: 2px solid var(--PrimaryColor);
+}
+.stack-item > p{
+    margin: 0;
+}
+.stacks-list{
+    display: flex;
+    gap: 1.2rem;
 }
 
-.stacks-list{
-    gap: .7rem;
-}
+
 .jquery{
     justify-content: space-between;
 }

@@ -14,11 +14,6 @@ class GetControllers{
         res.render('main', {PersonalData,  Projects})
     }
 
-    getCV(req: Request, res: Response){
-        const rootDirectory = "C:/Users/Anderson/Desktop/Portifolio/public/files/AndersonBones-Programador.pdf"
-      
-        res.download(rootDirectory)
-    }
 
     async postEmail (req: Request, res:Response){
         // let name = req.body.name as string;

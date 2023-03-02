@@ -100,12 +100,12 @@
          
 
 
-        <section id="resume" class="resume container text-Primary d-flex flex-column gap-5">
+        <section id="resume" class="pb-5 resume container text-Primary d-flex flex-column gap-5">
 
             <div class="hi">
-                <h1 class="pt-4">OLÁ</h1>
+                <h1 class="pt-4">Olá</h1>
                 <p><%= PersonalData[0].resume %></p>
-                <a class="d-flex download-dv justify-content-center align-items-center btn btn-warning text-white" href="/download-cv"><i class="bi bi-download "></i> <span>DOWNLOAD CV</span></a>
+                <a class="d-flex download-dv justify-content-center align-items-center btn btn-warning text-white" target="_blank" href="<%=PersonalData[0].cvUrl%>"><i class="bi bi-download "></i> <span>DOWNLOAD CV</span></a>
             </div>
           
             
@@ -115,7 +115,7 @@
                 
 
                 <div class="education-list mt-3">
-                    <div class="item">
+                    <div class="item start-circle end-circle">
                         <p class="mb-2"><%=PersonalData[0].university%></p>
                         <span >2022 - 2024</span>
                         <p class="mt-2"><%= PersonalData[0].education%></p>
@@ -141,73 +141,88 @@
                     </div>
                 </div> -->
 
-                <div class="qualifications">
-                    <h5 class="formatElement">QUALIFICAÇÕES</h5>
-                </div>
 
                 <div id="stack" class="stack  text-Primary ">
-                    <h5 class="formatElement">STACK</h5>
+                    <h5 class="formatElement">STACK E QUALIFICAÇÕES</h5>
 
-                    <div class="stacks-list d-flex  flex-wrap ">
-                        
-                        <div class="stack-item  d-inline-flex flex-column  align-items-center">
-                            <img src="https://img.icons8.com/color/144/null/html-5--v1.png" />
-                            <p>HTML</p>
-                        </div>
-                        
-                        <div class="stack-item  d-inline-flex flex-column  align-items-center">
-                            <img src="https://img.icons8.com/color/144/null/css3.png"/>
-                            <p>CSS</p>
-                        </div>
+                    <div class="stack-list mt-3 ">
 
-                        <div class="jquery stack-item d-inline-flex flex-column  align-items-center">
-                            <img src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/96/null/external-jquery-is-a-javascript-library-designed-to-simplify-html-logo-shadow-tal-revivo.png" />
-                            <p >JQUERY</p>
-                        </div>
-
-                        <div class="stack-item  d-inline-flex flex-column  align-items-center">
-                            <img src="https://img.icons8.com/color/144/null/bootstrap.png"/>
-                            <p>BOOTSTRAP</p>
-                        </div>
-
-
-                        <div class="stack-item  d-inline-flex flex-column  align-items-center">
-                            <img src="https://img.icons8.com/fluency/144/null/javascript.png" />
-                            <p>JAVASCRIPT</p>
-                        </div>
-
-                        <div class="stack-item  d-inline-flex flex-column  align-items-center">
-                            <img src="https://img.icons8.com/fluency/144/null/node-js.png"/>
-                            <p>NODE.JS</p>
-                        </div>
-                        
-                        <div class="stack-item  d-inline-flex flex-column  align-items-center">
-                            <img src="https://img.icons8.com/fluency/144/null/typescript--v2.png"/>
-                            <p>TYPESCRIPT</p>
+                        <div class="frontend-item item start-circle  ">
+                            <p class="">Front end</p>
+                            <div class="stacks-list">
+                                <div class="stack-item  d-inline-flex flex-column justify-content-center  align-items-center">
+                                    <img src="https://img.icons8.com/color/144/null/html-5--v1.png" />
+                                    <p>HTML</p>
+                                </div>
+                                
+                                <div class="stack-item  d-inline-flex flex-column  align-items-center">
+                                    <img src="https://img.icons8.com/color/144/null/css3.png"/>
+                                    <p>CSS</p>
+                                </div>
+        
+                                <div class="jquery stack-item d-inline-flex flex-column  align-items-center">
+                                    <img src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/96/null/external-jquery-is-a-javascript-library-designed-to-simplify-html-logo-shadow-tal-revivo.png" />
+                                    <p >JQUERY</p>
+                                </div>
+        
+                                <div class="stack-item  d-inline-flex flex-column  align-items-center">
+                                    <img src="https://img.icons8.com/color/144/null/bootstrap.png"/>
+                                    <p>BOOTSTRAP</p>
+                                </div>
+    
+                                <div class="stack-item  d-inline-flex flex-column  align-items-center">
+                                    <img src="https://img.icons8.com/fluency/144/null/javascript.png" />
+                                    <p>JAVASCRIPT</p>
+                                </div>
+                            </div>
+                            
                         </div>
 
-                        <div class="stack-item  d-inline-flex flex-column  align-items-center">
-                            <img src="https://img.icons8.com/color/144/null/mongodb.png"/>
-                            <p>MongoDB</p>
+                        <div class="backend-item item start-circle">
+                            <p >Back end</p>
+                            <div class="stacks-list">
+                                <div class="stack-item  d-inline-flex flex-column  align-items-center">
+                                    <img src="https://img.icons8.com/fluency/144/null/node-js.png"/>
+                                    <p>NODE.JS</p>
+                                </div>
+                                
+                                <div class="stack-item  d-inline-flex flex-column  align-items-center">
+                                    <img src="https://img.icons8.com/fluency/144/null/typescript--v2.png"/>
+                                    <p>TYPESCRIPT</p>
+                                </div>
+                            </div>
+                            
                         </div>
 
-                        <div class="stack-item  d-inline-flex flex-column  align-items-center">
-                            <img src="https://img.icons8.com/color/144/null/firebase.png"/>
-                            <p>FIREBASE</p>
+                        <div class="database-item item start-circle end-circle">
+                            <p >Banco de Dados</p>
+
+                            <div class="stacks-list d-flex flex-wrap">
+                                <div class="stack-item  d-inline-flex flex-column  align-items-center">
+                                    <img src="https://img.icons8.com/color/144/null/mongodb.png"/>
+                                    <p>MongoDB</p>
+                                </div>
+        
+                                <div class="stack-item  d-inline-flex flex-column  align-items-center">
+                                    <img src="https://img.icons8.com/color/144/null/firebase.png"/>
+                                    <p>FIREBASE</p>
+                                </div>
+        
+                                <div class="stack-item  d-inline-flex flex-column  align-items-center">
+                                    <img src="https://img.icons8.com/color/144/null/postgreesql.png"/>
+                                    <p>POSTGRESQL</p>
+                                </div>
+        
+                                <div class="stack-item  d-inline-flex flex-column  align-items-center">
+                                    <img src="https://img.icons8.com/color/144/null/git.png"/>
+                                    <p>GIT</p>
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="stack-item  d-inline-flex flex-column  align-items-center">
-                            <img src="https://img.icons8.com/color/144/null/postgreesql.png"/>
-                            <p>POSTGRESQL</p>
-                        </div>
-
-                        <div class="stack-item  d-inline-flex flex-column  align-items-center">
-                            <img src="https://img.icons8.com/color/144/null/git.png"/>
-                            <p>GIT</p>
-                        </div>
-
-                        
                     </div>
+
+
                 </div>
             
         </section>
@@ -215,7 +230,7 @@
         <div class="line "></div>
 
         <section id="portfolio" class="projects w-100 container text-Primary m-auto ">
-            <h1 class="mb-3">PROJETOS</h1>
+            <h1 class="mb-3" >Projetos Feitos</h1>
 
             <div class="projects-cards m-auto d-flex flex-column" >
         

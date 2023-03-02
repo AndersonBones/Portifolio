@@ -29,7 +29,7 @@ window.addEventListener('scroll',()=>{
         document.querySelector('nav').classList.remove('fixed-top');
          // remove padding top from body
         document.body.style.paddingTop = '0';
-       
+        $("#go-top").fadeOut('fast')
     } 
     
 })
