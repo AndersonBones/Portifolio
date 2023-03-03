@@ -97,7 +97,7 @@ li > a:focus-visible::after{
 }
 
 .person-photo{
-    border-radius: 50%;
+    
     z-index: 2;
     overflow: hidden;
     max-width: 25%;
